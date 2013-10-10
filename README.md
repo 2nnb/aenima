@@ -6,15 +6,14 @@ aenima
 
 <h2>First of all, what is this made of anyway?</h2>
 
-<a href="http://cisbit.com/api/">aenima</a> api is a restful api built with a little help of my friends: websocket, 
+<a href="http://cisbit.com/api/">aenima</a> is a restful api built with a little help of my friends: websocket, 
 socket.io, nodejs, apache, php, underscorejs, postgresql, jquery, handlebars and bootstrap 
 
 <b>ty all you guys are awesome</b>
 
-
 Cloud Computing allows the elasticity of the data server-side, using this we can achieve a simulation of 
 fluency giving a seamless product. This is the goal of aenima, following the steps of meteor and express
-but holding on to our beloved and old friend apache.
+but holding on to our beloved and old friend apache and adding some layers.
 
 <h2>But why?</h2>
 
