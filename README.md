@@ -37,8 +37,8 @@ friends:
    <li>amazon</li>
    <li>twitter</li>
    <li>facebook</li>
-   <li>crms</li>
    <li>wizpert</li>
+   <li>wordpress</li>
 </ul>
 
 How far can we push the  user-server interaction? The goal of aenima es to provide an union between different 
@@ -49,6 +49,7 @@ aplications:
   <li>social network</li>
   <li>cms</li>
   <li>crms</li>
+  <li><b>and all realtime</b> or and justice for all... :)</li>
 </ul>  
 
 All working under the same structure, a seamless transparent solution for both programer and user working 
