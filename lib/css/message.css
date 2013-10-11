@@ -1,0 +1,98 @@
+#confirm, #mensaje
+{
+	position:fixed;
+	z-index:9000;
+        opacity: 0.9;
+	filter: alpha(opacity=90); 
+	background: #fcfcfc;        
+	color: #009999;
+	-webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+          	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+       -moz-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+         	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+}
+#confirm
+{
+	width:400px;
+	top:50%;
+	left:50%;
+	margin-top:-87.5px;
+	margin-left:-200px;
+	font-size:14px;
+	display:none;
+}
+
+#mensaje
+{
+	width:250px;
+	height:150px;
+	bottom:-160px;
+	right:20px;
+	font-size:14px;
+	z-index:9999;
+}
+
+#confirm .tituloConfirmacion, #mensaje .tituloMensaje
+{
+    margin-left:10px;
+    margin-top:10px;
+    float:left;
+    width:100%;
+	text-transform:uppercase;
+}
+
+#confirm #message-title
+{
+    font-size:18px;
+}
+
+#mensaje .tituloMensaje
+{
+    font-size:16px;
+}
+
+#confirm .contenidoConfirmacion, #mensaje .contenidoMensaje
+{
+	margin-left:10px;
+	margin-top:10px;
+    overflow-x:hidden; 
+    overflow-y:auto; 
+    width:95%; 
+    float:left;
+}
+
+#confirm .contenidoConfirmacion
+{
+    height:40%;
+}
+
+#mensaje .contenidoMensaje
+{
+    height:60%;
+}
+
+#confirm botoneraConfirmacion
+{
+    text-align:right;
+    float:right;
+    width:100%;
+	margin-right:20px !important;
+	background-color:#000000;
+}
+
+#confirm .preguntaMsj, #mensaje .informationMsj
+{
+	color:#333;
+}
+
+#confirm .warningMsj, #mensaje .warningMsj
+{
+	color:#DE9317;
+}
+
+#confirm .errorMsj, #mensaje .errorMsj
+{
+	color:#C00000;
+}

@@ -1,0 +1,41 @@
+Se definiran a continuacion los puntos relevantes de la arquitectura desarrollada hasta el momento. 
+
+
+Autentificacion (google api, php, sesiones, postgresql)
+
+Para esta capa de las aplicaciones propongo el uso de la integracion con la plataforma de google, esto nos permite que nuestros usuarios se registren sin necesidad de rellenar formularios en caso de que posean una cuenta con google, y en caso contrario emplear el formato de registro en google el cual es de excelente calidad.
+Esta integracion no solo beneficia a los usuarios y a nuestro proceso de desarrollo, sino que nos permite ofrecer posteriores integraciones con los servicios de google en nuestras aplicaciones.
+
+Permisologia (sesiones, php, postgresql)
+
+Este aspecto esta relacionado con el primero, una vez registrados los usuarios se les debe asignar un rol por defecto, sin embargo en la estructura desarrollada hasta el momento es posible cambiar el rol de los usuarios registrados y definir o crear una interfaz y nivel de acceso distinto por rol, manteniendo nuestra base de autentificacion.
+
+Acceso datos (json, nodejs, php, postgresql, websocket, socket.io)
+
+Una vez definido el rol del usuario internamente nuestras aplicaciones tienen la capacidad de funcionar en tiempo real, esto quiere decir que cualquier cambio en el sistema es visible instantaneamente por todos los usuarios, para lograr esto se usa un websocket en nodejs a traves del cual unicamente se manejan las interacciones con la base de datos, las cuales son enviadas y recibidas con formato json a traves de php o node segun el caso.
+
+Renderizado en html (json, handlebars, underscorejs, html, bootstrap)
+
+Para finalizar los datos recibidos (json) son mapeados utilizando la libreria underscore, y posteriormente renderizados en html a traves de un formato de microtemplates (handlebars) esto nos permite mantener la funcionabilidad de los plugins en javascript con contenido dinamico, es decir, recarga asincrona de contenido, y en cuanto al html, bootstrap 3 como base.
+
+Un ejemplo y punto de partida para el uso de esta arquitectura esta en cisbit.com/api la idea es que sigamos trabajando sino de esta forma, con estas metas:
+
+*Separacion de la capa de datos e interfaz
+*Uso de javascript no intrusivo y orientado a objetos
+*Uso de tecnologia tiempo real
+*Integracion de servicios externos de autentificacion con el nuestro
+*Una arquitectura, n sistemas
+*Un sistema, n roles
+*Un rol, un nivel de acceso a datos e interfaz
+*Un rol, n usuarios
+
+Todo es modificable y mejorable en la medida de los requerimientos, pero considero que con esta base podemos desarrollar aplicaciones de excelente calidad y al tope de la tecnologia para el desarrollo de aplicaciones web actual.
+
+Algunas referecias:
+http://socket.io/#how-to-use
+https://code.google.com/p/google-api-php-client/
+http://underscorejs.org/
+http://nodejs.org/
+http://handlebarsjs.com/
+http://getbootstrap.com/
+
