@@ -1,4 +1,4 @@
-aenima
+ænima
 ======
 
 
@@ -55,5 +55,9 @@ All working under the same structure, a seamless transparent solution for both p
 for different devices and OSs.
 
 
-<h1></h1>
+<h1>Install instructions</h1>
+<p>You need to have installed in your server apache, php, php-pgsql, clone the repo in your www folder and run :)</p>
+
+<h1>Self æniming?</h1>
+<p>If you want to make your own ænima then just modify the api.js file with your database, modify the views port to your own one runing with nodejs.</p>
 
