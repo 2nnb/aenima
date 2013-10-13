@@ -84,15 +84,18 @@ var App = Class.extend(
                     socket.on('chat', function (data) 
                       {
                       log.info(data);
-                      $('#msg_list').html($('#msg_list').html()+'<li>'+data.user+': '+data.msg+'</li>');
+                      $('#msg_list').html($('#msg_list').html()+'<li class="list-group-item">'+data.msg+'<span class="badge">'+data.user+'</span></li>');
+                      $('#face_box').stop().animate({
+                          scrollTop: $("#face_box")[0].scrollHeight
+                      }, 800);
                       });
                     socket.on('log', function (data) 
                       {
                       log.info(data);
-                      if (data='user')
-                         {  
-
-                         }
+                      $('#msg_list').html($('#msg_list').html()+'<li class="list-group-item"><span class="badge alert-success">'+data+' is now in ænima</span></li>');
+                      $('#face_box').stop().animate({
+                          scrollTop: $("#face_box")[0].scrollHeight
+                      }, 800);                      
                       });
                     socket.on('connect', function () {                      
                       setTimeout("$('#facebox_overlay').animate({'opacity' : '0'},600)", 300);
