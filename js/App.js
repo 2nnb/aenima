@@ -74,7 +74,7 @@ var App = Class.extend(
          switch(module_input)
            {
            case 'main': 
-               log.info(self.name+' Main module Loaded');
+               log.info(self.name+' main module Loaded');
                switch (action_input)
                  {
                  case 'user':
@@ -92,7 +92,18 @@ var App = Class.extend(
                     socket.on('log', function (data) 
                       {
                       log.info(data);
-                      $('#msg_list').html($('#msg_list').html()+'<li class="list-group-item"><span class="badge alert-success">'+data+' is now in ænima</span></li>');
+                      if (data.length > 13)
+                         {
+                         var lasttw = data.substr(data.length - 12);
+                         }
+                         else
+                            {
+                            var lasttw = 'n';  
+                            }
+                      if (lasttw!='disconnected')
+                         $('#msg_list').html($('#msg_list').html()+'<li class="list-group-item"><span class="badge alert-success">'+data+' is now in ænima</span></li>');
+                       else
+                         $('#msg_list').html($('#msg_list').html()+'<li class="list-group-item"><span class="badge alert-danger">'+data+' from ænima</span></li>');
                       $('#face_box').stop().animate({
                           scrollTop: $("#face_box")[0].scrollHeight
                       }, 800);                      
@@ -124,24 +135,13 @@ var App = Class.extend(
                             $('#chat_send').click();
                         }
                     });
-                    log.info('here'); 
                  break;
                  default:
                       setTimeout("$('#facebox_overlay').animate({'opacity' : '0'},600)", 300);
                       $('#facebox_overlay').hide();                 
                  break;
                  }
-               log.info('Welcome to aenima '); 
-               break;
-           case 'smartblog':
-               log.info('blog module Loaded');    
-               self.post = new Post(self); 
-               //log.info(action_input);
-               //self.render.load_file_uploader_blog();                            
-               //self.render.load_post_isotope();                
-               break;             
-           case 'services':
-               log.info(self.name+' Services module Loaded');               
+               log.info('Welcome to aenima main module'); 
                break;
            }  
          log.info('App initialized');                               
