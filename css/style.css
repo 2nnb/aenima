@@ -17,18 +17,54 @@ z-index: 3024;
 top:45%;
 left: 45%;    
 }
-
-#face_box
+.rounded_bottom
 {
-background-color: #ccc;
-height: 300px;
+-webkit-border-bottom-right-radius: 13px;
+-webkit-border-bottom-left-radius: 13px;
+-moz-border-radius-bottomright: 13px;
+-moz-border-radius-bottomleft: 13px;
+border-bottom-right-radius: 13px;
+border-bottom-left-radius: 13px;  
+background-color: #ccc; 
+}
+.rounded_top
+{
 -webkit-border-top-left-radius: 13px;
 -webkit-border-top-right-radius: 13px;
 -moz-border-radius-topleft: 13px;
 -moz-border-radius-topright: 13px;
 border-top-left-radius: 13px;
 border-top-right-radius: 13px;
-overflow-y:visible;
+background-color: #ccc;
+}
+.rounded_right
+{
+-webkit-border-bottom-right-radius: 13px;
+-moz-border-radius-bottomright: 13px;
+border-bottom-right-radius: 13px;    
+}
+.rounded_all
+{
+background-color: #5d5d5d;    
+-webkit-border-top-left-radius: 13px;
+-webkit-border-top-right-radius: 13px;
+-moz-border-radius-topleft: 13px;
+-moz-border-radius-topright: 13px;
+border-top-left-radius: 13px;
+border-top-right-radius: 13px;    
+-webkit-border-bottom-right-radius: 13px;
+-webkit-border-bottom-left-radius: 13px;
+-moz-border-radius-bottomright: 13px;
+-moz-border-radius-bottomleft: 13px;
+border-bottom-right-radius: 13px;
+border-bottom-left-radius: 13px;    
+}
+#face_box
+{
+background-color: #f0f0f0;
+height:300px !important;
+max-height:300px !important;
+overflow-y: auto !important;
 }
 #chat_input
 {
@@ -37,23 +73,12 @@ overflow-y:visible;
 #face_inner_btn_box
 {
 background-color: #333;
-padding-top: 10px;
+padding-top: 13px;
 height: 60px;
--webkit-border-bottom-right-radius: 13px;
--moz-border-radius-bottomright: 13px;
--moz-border-radius-bottomleft: 13px;
-border-bottom-right-radius: 13px;
 }
 #face_btn_box
 {
-background-color: #5d5d5d;
 height: 60px;
--webkit-border-bottom-right-radius: 13px;
--webkit-border-bottom-left-radius: 13px;
--moz-border-radius-bottomright: 13px;
--moz-border-radius-bottomleft: 13px;
-border-bottom-right-radius: 13px;
-border-bottom-left-radius: 13px;
 }
 #msg_list
 {
@@ -61,13 +86,16 @@ border-bottom-left-radius: 13px;
 font-size: 12px !important;
 list-style:none; 
 text-align: right;
-height:100%;
-
 }
 #msg_list li
 {
-position: relative; 
-bottom: 0;
+height: 60px;
+margin: 0 !important;
+padding-top: 18px;
+}
+#msg_list li .badge
+{
+float: left;
 }
 .profile_picture
 {
@@ -252,3 +280,4 @@ div.DTFC_LeftBodyWrapper tbody tr:first-child td {
 div.DTFC_LeftFootWrapper table {
     border-top: none;
 }
+
