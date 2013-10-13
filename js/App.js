@@ -67,7 +67,7 @@ var App = Class.extend(
          {
          self = this;
          self.app = app; 
-         self.name = 'Cisbit';
+         self.name = 'aenima';
          new imageLoader(cImageSrc, 'startAnimation()');     
          var module_input = $('#module_input').val(); 
          var action_input = $('#action_input').val(); 
@@ -123,8 +123,12 @@ var App = Class.extend(
                     });
                     log.info('here'); 
                  break;
+                 default:
+                      setTimeout("$('#facebox_overlay').animate({'opacity' : '0'},600)", 300);
+                      $('#facebox_overlay').hide();                 
+                 break;
                  }
-               log.info('Welcome to CISBIT '); 
+               log.info('Welcome to aenima '); 
                break;
            case 'smartblog':
                log.info('blog module Loaded');    
