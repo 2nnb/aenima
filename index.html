@@ -29,28 +29,25 @@
       </header>
       <section>
         <h3>
-<a name="welcome-to-aenima" class="anchor" href="#welcome-to-aenima"><span class="octicon octicon-link"></span></a>Welcome to aenima</h3>
+<a name="installing-on-ubuntu" class="anchor" href="#installing-on-ubuntu"><span class="octicon octicon-link"></span></a>Installing on ubuntu</h3>
 
-<pre><code>$ sudo git clone git://github.com/b3n0n/aenima.git
-$ sudo chmod 777 -R /var/www (optional)
+<pre><code>$ sudo apt-get install apache php5 libapache2-mod-php5 php5-pgsql php5-curl
+$ cd /var/www/
+$ sudo git clone git://github.com/b3n0n/aenima.git
+$ sudo chmod 777 -R /var/www
+go to http://localhost/aenima/ (compatibility test for different browsers and devices needed)
 </code></pre>
 
-<p></p><h3>
-<a name="be-water-my-friendfirst-of-all-what-is-this-made-of-anyway" class="anchor" href="#be-water-my-friendfirst-of-all-what-is-this-made-of-anyway"><span class="octicon octicon-link"></span></a><a target="_blank" href="http://www.youtube.com/watch?v=J4fdPrjKDME">Be water my friend</a><h3>
-<a name="first-of-all-what-is-this-made-of-anyway" class="anchor" href="#first-of-all-what-is-this-made-of-anyway"><span class="octicon octicon-link"></span></a>
+<h1>
+<a name="%C3%A6nima" class="anchor" href="#%C3%A6nima"><span class="octicon octicon-link"></span></a>ænima</h1>
 
 <h2>
-<a name="first-of-all-what-is-this-made-of-anyway-1" class="anchor" href="#first-of-all-what-is-this-made-of-anyway-1"><span class="octicon octicon-link"></span></a>First of all, what is this made of anyway?</h2>
+<a name="what-is-%C3%A6nima" class="anchor" href="#what-is-%C3%A6nima"><span class="octicon octicon-link"></span></a>what is ænima?</h2>
 
-</h3>
-</h3><p><a target="_blank" href="http://cisbit.com/api/">aenima</a> is a restful api built with a little help of my friends: websocket, 
-socket.io, nodejs, apache, php, underscorejs, postgresql, jquery, handlebars and bootstrap </p>
+<p><a target="_blank" href="http://b3n0n.github.io/aenima">aenima</a> is a restful api built with a little help of my friends: websocket, 
+socket.io, nodejs, apache, php, underscorejs, postgresql, jquery, handlebars and bootstrap.</p>
 
-<p><b>ty all you guys are awesome</b></p>
-
-<p>Cloud Computing allows the elasticity of the data server-side, using this we can achieve a simulation of 
-fluency giving a seamless product. This is the goal of aenima, following the steps of meteor and express
-but holding on to our beloved and old friend apache and adding some layers.</p>
+<p>Following the steps of meteor and express but holding on to our old friend apache.</p>
 
 <h2>
 <a name="but-why" class="anchor" href="#but-why"><span class="octicon octicon-link"></span></a>But why?</h2>
@@ -58,28 +55,20 @@ but holding on to our beloved and old friend apache and adding some layers.</p>
 <p>Working with or in realtime apps makes you forget about rendering views server-side, the goal is
 to load all in the client, accessing a restful api, this way we can preserve the functionality of many js plugins
 that we all use to make our apps (datatables, datagrid, isotope, d3js, etc) and remain the dom accesibility of this
-re-rendered elements.... Or at least thats what I tell myself so I can keep on working on it :)</p>
+re-rendered elements.</p>
 
 <h2>
 <a name="can-i-help" class="anchor" href="#can-i-help"><span class="octicon octicon-link"></span></a>Can I help?</h2>
 
-<p>This is a one and a half men operation, any help, feedback and support is welcome! contact by mail
-<a href="mailto:b3n0ns@gmail.com">b3n0ns@gmail.com</a></p>
+<p>Any help, feedback and support is welcome! contact by mail <a href="mailto:b3n0ns@gmail.com">b3n0ns@gmail.com</a></p>
 
 <h2>
-<a name="whats-the-vision-of-aenima" class="anchor" href="#whats-the-vision-of-aenima"><span class="octicon octicon-link"></span></a>Whats the vision of aenima?</h2>
+<a name="whats-the-vision-of-%C3%A6nima" class="anchor" href="#whats-the-vision-of-%C3%A6nima"><span class="octicon octicon-link"></span></a>Whats the vision of ænima?</h2>
 
-<p>The goal is to make an unobtrusive framework that allows you to make your work and just gives you a way to achieve
-the functionality that we want, and eventually allow us to build apps that haves a mix of this big, larger than life 
-friends:</p>
+<p>The goal is to make an unobtrusive framework that allows you to do your work and gives you a way to achieve
+the functionality that we want, and eventually allow us to build apps on it.</p>
 
-<ul>
-<li>amazon</li>
-   <li>twitter</li>
-   <li>facebook</li>
-   <li>wizpert</li>
-   <li>wordpress</li>
-</ul><p>How far can we push the  user-server interaction? The goal of aenima es to provide an union between different 
+<p>How far can we push the  user-server interaction? The goal of aenima es to provide an union between different 
 aplications:</p>
 
 <ul>
@@ -92,15 +81,12 @@ aplications:</p>
 </ul><p>All working under the same structure, a seamless transparent solution for both programer and user working 
 for different devices and OSs.</p>
 
-<h1>
-<a name="install-instructions" class="anchor" href="#install-instructions"><span class="octicon octicon-link"></span></a>Install instructions</h1>
-
-<p>You need to have installed in your server apache, php, php-pgsql and php-curl, clone the repo in your www folder and run :)</p>
+<p>You need to have installed in your server apache, php, php-pgsql and php-curl on windows too, clone the repo in your www folder and run</p>
 
 <h1>
 <a name="self-%C3%A6niming" class="anchor" href="#self-%C3%A6niming"><span class="octicon octicon-link"></span></a>Self æniming?</h1>
 
-<p>If you want to make your own ænima then just modify the api.js file with your database, modify the views port to your own one runing with nodejs</p>
+<p>If you want to make your own ænima then just modify the api.js file with your database and config to it, modify the views port to your own one runing with nodejs</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/b3n0n">b3n0n</a></p>
