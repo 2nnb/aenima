@@ -58,6 +58,7 @@ for different devices and OSs.
 <h1>Installing on ubuntu</h1>
 <ul>
   <li>$ sudo apt-get install apache php5 libapache2-mod-php5 php5-pgsql php5-curl</li>
+  <li>$ cd /var/www/</li>
   <li>$ sudo git clone git://github.com/b3n0n/aenima.git</li>
   <li>$ sudo chmod 777 -R /var/www</li>
   <li>go to http://localhost/aenima/ (compatibility test for different browsers and devices needed)</li>
