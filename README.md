@@ -1,7 +1,7 @@
 ### Installing on ubuntu
 
 ```
-$ sudo apt-get install apache php5 libapache2-mod-php5 php5-pgsql php5-curl
+$ sudo apt-get install git apache php5 libapache2-mod-php5 php5-pgsql php5-curl
 $ cd /var/www/
 $ sudo git clone git://github.com/b3n0n/aenima.git
 $ sudo chmod 777 -R /var/www
