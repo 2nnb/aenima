@@ -141,7 +141,7 @@ class api
                     $timestamp_birth = mktime(0, 0, 0, $a['tm_mon']+1, $a['tm_mday'], $a['tm_year']+1900); 
                    }              
              $this->insert_client($_SESSION['persona_google_profile']['id'], $_SESSION['persona_google_profile']['name'], $_SESSION['persona_google_profile']['email'], $_SESSION['persona_google_profile']['gender'], $timestamp_birth, $_SESSION['persona_google_profile']['picture']); 
-             header('Location: http://cisbit.com/api/');
+             header('Location: http://localhost/aenima/');
              } 
        }  
     $this->log('role defined as '.$_SESSION["role_name"].'::'.$_SESSION["role"]);   
