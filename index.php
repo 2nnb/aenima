@@ -2,7 +2,7 @@
   error_reporting(E_ALL + E_STRICT);
   require_once 'api.php';
   session_start();
-  $_SESSION['api'] = new api('api');  
+  $_SESSION['api'] = new api('aenima');  
   if (isset($_GET['h2o'])) 
      {    
      $_SESSION['h2o'] = $_GET['h2o'];
