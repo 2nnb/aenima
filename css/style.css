@@ -57,11 +57,16 @@ border-bottom-left-radius: 13px;
 }
 #msg_list
 {
-position: relative;    
+   
 font-size: 12px !important;
 list-style:none; 
 text-align: right;
 height:100%;
+
+}
+#msg_list li
+{
+position: relative; 
 bottom: 0;
 }
 .profile_picture
