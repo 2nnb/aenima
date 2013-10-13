@@ -26,7 +26,7 @@ re-rendered elements.... Or at least thats what I tell myself so I can keep on w
 This is a one and a half men operation, any help, feedback and support is welcome! contact by mail
 b3n0ns@gmail.com
 
-<h2>Whats the vision of aenima?</h2>
+<h2>Whats the vision of ænima?</h2>
 
 The goal is to make an unobtrusive framework that allows you to make your work and just gives you a way to achieve
 the functionality that we want, and eventually allow us to build apps that haves a mix of this big, larger than life 
@@ -55,8 +55,14 @@ All working under the same structure, a seamless transparent solution for both p
 for different devices and OSs.
 
   
-<h1>Install instructions</h1>
-<p>You need to have installed in your server apache, php, php-pgsql and php-curl, clone the repo in your www folder and run :)</p>
+<h1>Installing on ubuntu</h1>
+<ul>
+  <li>$ sudo apt-get install apache php5 libapache2-mod-php5 php5-pgsql php5-curl</li>
+  <li>$ sudo git clone git://github.com/b3n0n/aenima.git</li>
+  <li>$ sudo chmod 777 -R /var/www</li>
+  <li>go to http://localhost/aenima/ (compatibility test for different browsers and devices needed)</li>
+</ul>
+<p>You need to have installed in your server apache, php, php-pgsql and php-curl (this runs in windows too, I must add install instructions for that) then clone the repo in your www folder and run :)</p>
 
 <h1>Self æniming?</h1>
 <p>If you want to make your own ænima then just modify the api.js file with your database, modify the views port to your own one runing with nodejs.</p>
