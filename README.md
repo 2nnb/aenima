@@ -8,6 +8,16 @@ $ sudo chmod 777 -R /var/www
 go to http://localhost/aenima/ (compatibility test for different browsers and devices needed)
 ```
 
+### Installing on windows
+
+```
+$ Install  <a target="_blank" href="http://www.wampserver.com/en/">WAMP</a>
+
+$ activate the php-pgsql and php-curl
+
+$ clone the repo in your wamp/www folder and run
+```
+
 ænima
 ======
 
@@ -44,10 +54,6 @@ aplications:
   <li><b>and all realtime</b> or and justice for all... :)</li>
 </ul>  
 
-All working under the same structure, a seamless transparent solution for both programer and user working 
-for different devices and OSs.
-
-<p>You need to have installed in your server apache, php, php-pgsql and php-curl on windows too, clone the repo in your www folder and run</p>
 
 <h1>Self æniming?</h1>
 <p>If you want to make your own ænima then just modify the api.js file with your database and config to it, modify the views port to your own one runing with nodejs</p>
