@@ -1,4 +1,3 @@
-
 <?php 
 
 class api
@@ -9,7 +8,6 @@ class api
     require_once 'lib/php/google/contrib/Google_PlusService.php';
     require_once 'lib/php/google/contrib/Google_CalendarService.php';
     require_once 'lib/php/google/contrib/Google_Oauth2Service.php';
-    require_once 'lib/php/fb/facebook.php';
     require_once 'lib/php/cisbit/bd.php';
     $_SESSION['apilog'] = '';
    	$this->log('loading auth api');
@@ -185,7 +183,7 @@ class api
     {
 
     $_SESSION['client_google'] = new Google_Client();
-    $_SESSION['client_google']->setApplicationName("Cisbit Aps");
+    $_SESSION['client_google']->setApplicationName("aenima");
     $_SESSION['client_google']->setClientId('800208504678-hqp091fanunajd8nm5v30k6jpe02f03t.apps.googleusercontent.com');
     $_SESSION['client_google']->setClientSecret('uDqnb5SMm_YlkbnE00cwOQJT');
     $_SESSION['client_google']->setRedirectUri('http://localhost/aenima/');
@@ -196,7 +194,7 @@ class api
          {
          $_SESSION['client_google']->authenticate($_GET['code']);
          $_SESSION['access_token'] = $_SESSION['client_google']->getAccessToken();
-         header('Location: http://localhost/api/');
+         header('Location: http://localhost/aenima/');
          } 
        catch (Exception $e) 
          {
