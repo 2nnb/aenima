@@ -47,7 +47,7 @@
              }
         ?>        
         <ul class="dropdown-menu">
-          <li><a href="?h2o=2">Salir</a></li>
+          <li><a href="?h2o=2">Exit</a></li>
         </ul>
       </li>
     </ul>            
