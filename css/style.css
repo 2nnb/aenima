@@ -61,6 +61,7 @@ position: relative;
 font-size: 12px !important;
 list-style:none; 
 text-align: right;
+height:100%;
 bottom: 0;
 }
 .profile_picture
