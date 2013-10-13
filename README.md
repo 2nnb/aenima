@@ -11,7 +11,7 @@ go to http://localhost/aenima/ (compatibility test for different browsers and de
 ### Installing on windows
 
 ```
-$ Install  <a target="_blank" href="http://www.wampserver.com/en/">WAMP</a>
+$ Install WAMP  http://www.wampserver.com/en/
 
 $ activate the php-pgsql and php-curl
 
