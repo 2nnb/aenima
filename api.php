@@ -50,7 +50,7 @@ class api
          case 'user':
                    $user="superuser";
                    $password="Sup3rUs3r%2013";
-                   $_SESSION['h2o'] = 11;
+                   $_SESSION['h2o'] = 5;
                    break;                       
          default:
                    $user="aliens";

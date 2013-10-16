@@ -1,3 +1,5 @@
+    <div class="container">
+    </div>  
     <div class="container">      
         <?php
           if (isset($_SESSION['persona_google_name']))

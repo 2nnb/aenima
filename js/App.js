@@ -59,7 +59,7 @@
   }
   
   //The following code starts the animation
-
+new imageLoader(cImageSrc, 'startAnimation()'); 
 
 var App = Class.extend(
     {
@@ -68,7 +68,7 @@ var App = Class.extend(
          self = this;
          self.app = app; 
          self.name = 'aenima';
-         new imageLoader(cImageSrc, 'startAnimation()');     
+             
          var module_input = $('#module_input').val(); 
          var action_input = $('#action_input').val(); 
          switch(module_input)
