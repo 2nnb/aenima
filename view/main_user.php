@@ -15,7 +15,7 @@
 <div id="facebox_overlay">
     <div id="loaderImage"></div>
 </div>
-<script src="http://54.235.167.23:1337/socket.io/socket.io.js"></script>	
+  <script src="http://54.235.167.23:6969/socket.io/socket.io.js"></script>	
   <?php
     $module_input = "<input type='hidden' id='module_input' value='".$_SESSION["module"]."' />";
     $action_input = "<input type='hidden' id='action_input' value='".$_SESSION["action"]."' />";

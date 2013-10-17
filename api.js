@@ -1,7 +1,7 @@
 var pg = require('pg'),
     conString = 'postgres://aliens:aliens%2013@54.235.167.23/cisbit_aps',
     pg_client = new pg.Client(conString), 
-    io = require('socket.io').listen(1337);  
+    io = require('socket.io').listen(6969);  
 io.set('log level', 2);
 io.configure(function (){
   io.set('authorization', function (handshakeData, callback) {
@@ -14,8 +14,7 @@ io.sockets.on('connection', function (socket)
   console.log('Auth: ',  socket.handshake.query);
   socket.on('disconnect', function () 
     {
-    io.sockets.emit('log', 'user disconnected');
-
+    io.sockets.emit('log', 'User '+socket.handshake.query.username+' disconnected');
     });
   socket.on('chat', function (data) 
     {

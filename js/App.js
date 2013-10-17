@@ -78,7 +78,7 @@ var App = Class.extend(
                switch (action_input)
                  {
                  case 'user':
-                    var socket = io.connect('http://54.235.167.23:1337/', { query: 
+                    var socket = io.connect('http://54.235.167.23:6969/', { query: 
                                                                           "user_id="+$('#user_id_input').val()+"&"+"username="+$('#user_input').val() 
                                                                       });  
                     socket.on('chat', function (data) 
