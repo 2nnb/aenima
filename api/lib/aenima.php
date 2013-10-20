@@ -3,31 +3,14 @@ class aenima
   {
   public function aenima($app, $logo, $google_client_id, $google_client_secret, $redirect_uri, $socket_url)
     {          
-    $this->app = $app;
+    $this->app = 'aenima';
+    $this->subapp = $app;
     $this->apilog = '';   
     $this->logo = $logo;    
     $this->google_client_id = $google_client_id;   
     $this->google_client_secret = $google_client_secret;
     $this->redirect_uri = $redirect_uri;
     $this->socket_url = $socket_url;
-    try
-      {
-      require_once 'google/Google_Client.php';
-      require_once 'google/contrib/Google_PlusService.php';
-      require_once 'google/contrib/Google_CalendarService.php';
-      require_once 'google/contrib/Google_Oauth2Service.php';     
-      require_once 'db.php';    
-      }
-    catch (Exception $e) 
-      {
-      $this->error_handle($e);                      
-      } 
-    $this->log('loading auth for '.$this->app);
-    $this->init();    
-    $this->load_google(); 
-    $this->load_role();        
-    $this->load_get_values();    
-    $this->load_module();   
     }
   public function run()
     {
