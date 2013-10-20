@@ -1,28 +1,16 @@
 <?php
-  error_reporting(E_ALL + E_STRICT);
-  require_once 'api.php';
-  session_start();
-  $_SESSION['api'] = new api('aenima');  
-  if (isset($_GET['h2o'])) 
-     {    
-     $_SESSION['h2o'] = $_GET['h2o'];
-     }
-  if (isset($_GET['r'])) 
-     {    
-     $_SESSION['h2o'] = $_GET['r'];
-     //header("location: index.php");
-     }     
-  if (isset($_GET['callback']))
-     {
-     $_SESSION['callback'] =  $_GET['callback'];
-     }
-  if (isset($_GET['filter']))
-     {
-     $_SESSION['filter'] =  $_GET['filter'];
+  require_once 'api/lib/aenima.php';
+  session_start();  
+  if (!(isset($_SESSION['api'])))
+  	 {
+  	 //Local deploy start 	
+     $_SESSION['api'] = new aenima('aenima', 'https://lh3.googleusercontent.com/-9a0y-GzcK2o/T-pcVa8cc3I/AAAAAAAAAD4/oLzbfVwBvYY/s450-no/fp.jpg', '800208504678-hqp091fanunajd8nm5v30k6jpe02f03t.apps.googleusercontent.com', 'uDqnb5SMm_YlkbnE00cwOQJT', 'http://localhost/aenima/', 'http://54.235.167.23:1337');              
+  	 //Remote deploy start
+     //$_SESSION['api'] = new aenima('aenima', 'https://lh3.googleusercontent.com/-9a0y-GzcK2o/T-pcVa8cc3I/AAAAAAAAAD4/oLzbfVwBvYY/s450-no/fp.jpg', '346445246321.apps.googleusercontent.com', 'u0GmIsKRx-Qb5lDMzd03xoVH', 'http://ec2-54-204-3-189.compute-1.amazonaws.com', 'http://ec2-54-204-3-189.compute-1.amazonaws.com:1337');
+     header("location: ./");
      }
      else
-        {
-        $_SESSION['filter'] = null;
-        }        
-  $module = $_SESSION['api']->load_module($_SESSION['h2o']);           
+     	{     	
+     	$_SESSION['api']->run();
+     	}
 ?>

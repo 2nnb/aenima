@@ -1,0 +1,24 @@
+{
+  "name": "aenima",
+  "subdomain": "b3n0n-api",
+  "scripts": 
+    {
+    "start": "api.js"
+    },
+  "version": "0.0.0-36",
+  "engines": {
+    "node": "0.10.20"
+    },
+  "dependencies": 
+    {
+    "pg" : "2.6.2",
+    "jquery": "1.8.3",
+    "underscore": "1.5.2",
+    "oauth": "0.9.9",
+    "tmp": "0.0.21",
+    "socket.io-client": "0.9.16",
+    "socket.io": "0.9.16",
+    "nodecr": "0.0.5",    
+    "twit": "1.1.x"
+    }
+}
