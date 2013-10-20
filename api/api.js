@@ -32,9 +32,6 @@ function handleError(err)
   console.error('data:', err.data);
   }
 
-  
-
-
 var pg = require('pg'),
     conString = 'postgres://aliens:aliens%2013@54.235.167.23/cisbit_aps',
     pg_client = new pg.Client(conString), 
@@ -58,17 +55,7 @@ io.sockets.on('connection', function (socket)
     var followers_names = _.pluck(followers, 'name');
     io.sockets.emit('log', JSON.stringify(followers_names));  
     console.log('# followers:'+JSON.stringify(followers_names));
-    });
-  bot.twit.get('search/tweets', { q: '@nikemallamerica #RSVP since:2011-11-11', count: 100 }, function(err, reply) {
-    if(err) return handleError(err)
-    var tweets = reply.statuses;
-    tweets = _.pluck(tweets, ['text','url']);
-    //var followers_names = _.pluck(followers, 'name');    
-    $.each(tweets, function(){
-      console.log('# tweets:'+this);   
-      //io.sockets.emit('log', JSON.stringify(this)); 
-      });      
-    })  
+    }); 
   socket.on('disconnect', function () 
     {
     io.sockets.emit('log', 'User '+socket.handshake.query.username+' disconnected');
