@@ -31,7 +31,7 @@
              <span class="icon-bar"/>
              <span class="icon-bar"/>
              </button>
-             <a class="navbar-brand" href="#">rsvp</a>
+             <a class="navbar-brand" href="#"><img src="ico/logo.png"></img></a>
           </div>
         <div class="collapse navbar-collapse navbar-ex2-collapse">
              <ul class="nav navbar-nav navbar-right">
