@@ -51,7 +51,7 @@
         <div class="row row-offcanvas row-offcanvas-right">
           <div class="col-xs-8 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
                <h4>Welcome to ænima<h4>
-               <p>Enjoi! if you would like a further selfæniming contact me b3n0ns@gmail.com</p>
+               <p><small>Enjoi! if you would like a further selfæniming contact me b3n0ns@gmail.com</small></p>
           </div>     
         <div class="col-xs-12 col-sm-9" >           
           <p class="pull-right visible-xs">
