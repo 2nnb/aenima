@@ -46,37 +46,12 @@
    <?php
      include('view/'.$_SESSION['api']->module."/".$_SESSION['api']->action.".php");
    ?>    
-    <div class="modal fade" style="color:gray;" id="mymodal_add">
-      <div class="modal-dialog">
-        <div class="modal-content">
-           <form id='form_tweets' class="form-horizontal" role="form">
-             <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h4 class="modal-title" id="myModalLabel"><i class=" icon-twitter icon-pencil"></i> Tweet Manager</h4>
-             </div>
-             <div class="modal-body">
-                <p>Order</p>
-                <input id="order" name="order"  class="form-control input-xlarge focused" maxlength="100" type="text" placeholder="Order">
-                <br>
-                <p>Handle</p>
-                <input id="handle"  name="handle" class="form-control input-xlarge focused" maxlength="100" type="text" placeholder="Handle">
-                <br>
-                <p>Status</p>
-                <textarea id="status" label="status" class="form-control" name="status" style="width: 100%; height: 100px;" maxlength="120" placeholder="Status.."></textarea>
-             </div>
-              <div class="modal-footer">
-                <button id="update_action" type="button" class="btn btn-success"><i class="icon-send icon-large"></i> Send</button>
-              </div>    
-
-            </form> 
-        </div>
-      </div>
-    </div>
       <div id='item_modal'></div>
       <div class="container">
         <div class="row row-offcanvas row-offcanvas-right">
           <div class="col-xs-8 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            sidebar
+               <h4>Welcome to ænima<h4>
+               <p>Enjoi! if you would like a further selfæniming contact me b3n0ns@gmail.com</p>
           </div>     
         <div class="col-xs-12 col-sm-9" >           
           <p class="pull-right visible-xs">
@@ -86,10 +61,10 @@
             <div id='item_list' class="table-responsive"></div>        
           </div><!--/row-->
           <div class="row">
-              <a style="width:100%;" href="#mymodal_add" data-toggle="modal"class="btn btn-info  btn-large"> <i class="icon-twitter icon-large"></i> Add</a>
+              <a style="width:100%;" href="#" data-toggle="modal"class="btn btn-info  btn-large"> <i class="icon-twitter icon-large"></i> aenima</a>
           </div>
          </div>
-        <footer><p>&copy; ænima 2013</p></footer>         
+        <footer><p>ænima v0.0.2</p></footer>         
         </div>
       </div>        
       <script type="text/javascript" language="javascript" src="api/lib/js/class.js"></script>
