@@ -4,7 +4,7 @@
   if (!(isset($_SESSION['api'])))
   	 {
   	 //Local deploy start 	
-     $_SESSION['api'] = new aenima('aenima', 'https://lh3.googleusercontent.com/-9a0y-GzcK2o/T-pcVa8cc3I/AAAAAAAAAD4/oLzbfVwBvYY/s450-no/fp.jpg', '800208504678-hqp091fanunajd8nm5v30k6jpe02f03t.apps.googleusercontent.com', 'uDqnb5SMm_YlkbnE00cwOQJT', 'http://localhost/aenima/', 'http://54.235.167.23:1337');              
+     $_SESSION['api'] = new aenima('aenima', 'https://lh3.googleusercontent.com/-9a0y-GzcK2o/T-pcVa8cc3I/AAAAAAAAAD4/oLzbfVwBvYY/s450-no/fp.jpg', '800208504678-hqp091fanunajd8nm5v30k6jpe02f03t.apps.googleusercontent.com', 'uDqnb5SMm_YlkbnE00cwOQJT', 'http://localhost/aenima/', 'http://54.204.3.189:1337');              
   	 
   	 
   	 //Remote deploy start
