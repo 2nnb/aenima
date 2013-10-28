@@ -19,8 +19,7 @@ var aenima = Class.extend(
                  } 
                break;
            case 'error':
-               log.info(self.name+' error module Loaded');
-               log.info(self.name+' main module Loaded');       
+               log.info(self.name+' error module Loaded');      
            }
          setTimeout("$('#facebox_overlay').animate({'opacity' : '0'},600)", 300);
          $('#facebox_overlay').hide();    
