@@ -75,7 +75,7 @@ class aenima
              {     
              $this->module="error";
              $this->action="main";
-             $_SESSION["error_msg"]="You dont have permission to access this page, please reload or go back to the <a href='index.php'>begining</a>";   
+             $this->error_msg="You dont have permission to access this page, please reload or go back to the <a href='index.php'>begining</a>";   
              }
        }
        else
